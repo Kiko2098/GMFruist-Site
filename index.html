@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="GM Fruits — Origem, Qualidade e Confiança. Distribuição de fruta fresca de origem certificada para empresas e restauração na Madeira." />
+  <meta name="description" content="GM Fruits — Frescura que se sente, qualidade que se vê. Distribuição de fruta fresca de origem certificada para empresas e restauração na Madeira." />
   <meta name="keywords" content="fruta fresca, distribuição alimentar, qualidade, GM Fruits, fruta de origem, fornecedor fruta, Madeira" />
   <meta name="author" content="GM Fruits" />
-  <meta property="og:title" content="GM Fruits — Origem, Qualidade e Confiança" />
-  <meta property="og:description" content="Fruta fresca de origem certificada. Qualidade que se vê, confiança que se sente." />
+  <meta property="og:title" content="GM Fruits — Frescura que se sente, qualidade que se vê." />
+  <meta property="og:description" content="Frescura que se sente, qualidade que se vê. Fruta fresca de origem certificada para empresas e restauração na Madeira." />
   <meta property="og:type" content="website" />
-  <title>GM Fruits — Origem, Qualidade e Confiança</title>
+  <title>GM Fruits — Frescura que se sente, qualidade que se vê.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -20,11 +20,8 @@
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
-
-      <a href="#inicio" class="header__logo">
-        <div class="header__logo-bg">
-          <img src="images/logo.png" alt="GM Fruits" class="header__logo-img" />
-        </div>
+      <a href="#inicio" class="header__logo-bg">
+        <img src="images/logo.png" alt="GM Fruits" class="header__logo-img" />
       </a>
 
       <nav class="nav" id="nav">
@@ -37,510 +34,236 @@
         </ul>
       </nav>
 
-      
-
       <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- ===== HERO (split) ===== -->
   <section class="hero" id="inicio">
-    <div class="hero__bg">
-      <img
-        src="https://images.unsplash.com/photo-1573246123716-6b1782bfc499?w=1600&q=80"
-        alt="Frutas frescas de qualidade premium"
-        class="hero__bg-img"
-        loading="eager"
-      />
-      <div class="hero__overlay"></div>
-    </div>
-
-    <div class="container hero__inner">
-      <div class="hero__content fade-in">
-        <span class="hero__eyebrow">Origem · Qualidade · Confiança</span>
-        <h1 class="hero__title">
-          A fruta que a natureza<br />
-          <em>criou para si</em>
-        </h1>
-        <p class="hero__subtitle">
-          Da origem ao destino, garantimos fruta fresca de qualidade superior —
-          seleccionada com rigor, entregue com confiança.
+    <div class="hero__panel">
+      <div class="hero__content reveal">
+        <h1 class="hero__title">Frescura que se sente,<br /><span>qualidade que se vê.</span></h1>
+        <p class="hero__lead">
+          Distribuição de fruta e produtos frescos de origem certificada,
+          entregues com confiança a empresas e restauração na Madeira.
         </p>
         <div class="hero__actions">
-          <a href="#produtos"  class="btn btn--gradient btn--lg">Conhecer Produtos</a>
-          <a href="#sobre"     class="btn btn--outline-white btn--lg">A Nossa História</a>
+          <a href="#produtos" class="btn btn--solid">Ver Produtos</a>
+          <a href="#contacto" class="btn btn--ghost">Falar Connosco</a>
         </div>
       </div>
-
-      <div class="hero__scroll-hint fade-in fade-in--slow">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
+    </div>
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1573246123716-6b1782bfc499?w=1200&q=80" alt="Frutas frescas de qualidade premium" loading="eager" />
     </div>
   </section>
 
-  <!-- ===== VALORES (Origen / Quality / Trust) ===== -->
-  <section class="valores-band">
-    <div class="container valores-band__grid">
-
-      <div class="vcard reveal">
-        <div class="vcard__icon vcard__icon--green">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <div>
-          <h3 class="vcard__title">Origem</h3>
-          <p class="vcard__text">Rastreabilidade total e parcerias directas com os melhores produtores.</p>
-        </div>
-      </div>
-
-      <div class="vcard reveal reveal--delay-1">
-        <div class="vcard__icon vcard__icon--gold">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
-        <div>
-          <h3 class="vcard__title">Qualidade</h3>
-          <p class="vcard__text">Selecção rigorosa em cada etapa — só o melhor chega até si.</p>
-        </div>
-      </div>
-
-      <div class="vcard reveal reveal--delay-2">
-        <div class="vcard__icon vcard__icon--orange">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="28" height="28"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        </div>
-        <div>
-          <h3 class="vcard__title">Confiança</h3>
-          <p class="vcard__text">Parcerias duradouras assentes na transparência e fiabilidade.</p>
-        </div>
-      </div>
-
+  <!-- ===== TICKER ===== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span class="ticker__item">Origem certificada</span>
+      <span class="ticker__item">Cadeia de frio garantida</span>
+      <span class="ticker__item">+20 países de origem</span>
+      <span class="ticker__item">Entrega com confiança</span>
+      <span class="ticker__item">Frescura todos os dias</span>
+      <span class="ticker__item">Origem certificada</span>
+      <span class="ticker__item">Cadeia de frio garantida</span>
+      <span class="ticker__item">+20 países de origem</span>
+      <span class="ticker__item">Entrega com confiança</span>
+      <span class="ticker__item">Frescura todos os dias</span>
     </div>
-  </section>
+  </div>
 
   <!-- ===== SOBRE ===== -->
   <section class="sobre section" id="sobre">
-    <div class="container sobre__grid">
-
-      <div class="sobre__visual reveal">
-        
-        <img src="images/logo.png" 
-        alt="GM Fruits" 
-        class="sobre__img"
-          loading="lazy" />
-        <div class="sobre__badge">
-          <span class="sobre__badge-num">+15</span>
-          <span class="sobre__badge-label">Anos de Experiência</span>
-        </div>
-      </div>
-
-      <div class="sobre__content reveal reveal--right">
-        <span class="section__tag">Quem Somos</span>
-        <h2 class="section__title">Ligamos as melhores origens às mesas que confiam em nós</h2>
-        <p class="sobre__text">
+    <div class="container">
+      <div class="sobre__top reveal">
+        <span class="tag tag--green">Quem Somos</span>
+        <h2 class="heading">Ligamos as melhores origens às mesas que confiam em nós</h2>
+        <p class="sobre__quote">
           A <strong>GM Fruits</strong> nasceu da convicção de que fruta de qualidade começa
-          na origem. Trabalhamos directamente com produtores seleccionados, garantindo que
-          cada peça chega ao cliente no seu ponto ideal — fresca, saborosa e rastreável.
+          na origem. O nosso compromisso está expresso no nosso slogan:
+          <em>Frescura que se sente, qualidade que se vê.</em>
         </p>
-        <p class="sobre__text">
-          O nosso compromisso está expresso no nosso slogan:
-          <em>Origem, Qualidade e Confiança</em>. Não são apenas palavras — são os três pilares
-          que guiam cada decisão que tomamos.
-        </p>
-
-        <div class="sobre__pillars">
-          <div class="pillar">
-            <span class="pillar__dot pillar__dot--green"></span>
-            <div>
-              <h4>Origem certificada</h4>
-              <p>Rastreabilidade total do produtor ao cliente.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <span class="pillar__dot pillar__dot--gold"></span>
-            <div>
-              <h4>Controlo de qualidade</h4>
-              <p>Selecção visual e organoléptica em cada lote.</p>
-            </div>
-          </div>
-          <div class="pillar">
-            <span class="pillar__dot pillar__dot--orange"></span>
-            <div>
-              <h4>Entrega de confiança</h4>
-              <p>Logística rigorosa que preserva a frescura.</p>
-            </div>
-          </div>
-        </div>
       </div>
 
+      <div class="stats-row" id="numeros">
+        <div class="reveal">
+          <p class="stat-inline__value"><span class="stat-num" data-target="15">0</span>+</p>
+          <p class="stat-inline__label">Anos de experiência</p>
+        </div>
+        <div class="reveal reveal--delay-1">
+          <p class="stat-inline__value"><span class="stat-num" data-target="20">0</span>+</p>
+          <p class="stat-inline__label">Países de origem</p>
+        </div>
+        <div class="reveal reveal--delay-2">
+          <p class="stat-inline__value"><span class="stat-num" data-target="300">0</span>t+</p>
+          <p class="stat-inline__label">Distribuídas por ano</p>
+        </div>
+        <div class="reveal reveal--delay-3">
+          <p class="stat-inline__value"><span class="stat-num" data-target="500">0</span>+</p>
+          <p class="stat-inline__label">Clientes satisfeitos</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== PRODUTOS ===== -->
-  <section class="produtos section section--dark" id="produtos">
+  <!-- ===== PRODUTOS (bento) ===== -->
+  <section class="produtos section" id="produtos">
     <div class="container">
-      <div class="section__header reveal">
-        <span class="section__tag section__tag--light">Categorias</span>
-        <h2 class="section__title section__title--light">O melhor de cada origem</h2>
-        <p class="section__subtitle section__subtitle--light">
-          Frutas e produtos seleccionados dos melhores mercados nacionais e internacionais.
-        </p>
-      </div>
+      <span class="tag tag--light">Categorias</span>
+      <h2 class="heading heading--light">O melhor de cada origem</h2>
+      <p class="sub sub--light">Frutas e produtos seleccionados dos melhores mercados nacionais e internacionais.</p>
 
       <div class="produtos__grid">
-
         <div class="pcard reveal">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=500&q=75" alt="Frutas tropicais" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Frutas Tropicais &amp; Exóticas</h3>
-            <p>Manga, papaia, abacate, maracujá e muito mais.</p>
-          </div>
+          <img src="images/manga.webp" alt="Frutas tropicais" loading="lazy" />
+          <div class="pcard__overlay"><h3>Frutas Tropicais &amp; Exóticas</h3></div>
         </div>
-
-        <div class="pcard reveal reveal--delay-1">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=500&q=75" alt="Citrinos" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Citrinos</h3>
-            <p>Laranjas, limões, tangerinas e clementinas de origens premiadas.</p>
-          </div>
-        </div>
-
-        <div class="pcard reveal reveal--delay-2">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=500&q=75" alt="Maçãs" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Maçãs</h3>
-            <p>Royal Gala, Golden, Fuji, Granny Smith e muitas outras variedades.</p>
-          </div>
-        </div>
-
         <div class="pcard reveal">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1639328945616-6a202b23dd30?w=500&q=75" alt="Peras" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Peras</h3>
-            <p>Rocha, Conference, Williams e outras variedades selecionadas.</p>
-          </div>
+          <img src="images/laranjas.webp" alt="Citrinos" loading="lazy" />
+          <div class="pcard__overlay"><h3>Citrinos</h3></div>
         </div>
-
-        <div class="pcard reveal reveal--delay-1">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=500&q=75" alt="Frutos vermelhos" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Frutos Vermelhos</h3>
-            <p>Morangos, framboesas, mirtilos e cerejas de cultivo controlado.</p>
-          </div>
-        </div>
-
-        <div class="pcard reveal reveal--delay-2">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1639588473831-dd9d014646ae?w=500&q=75" alt="Frutos de caroço" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Frutos de Caroço</h3>
-            <p>Pêssegos, nectarinas e ameixas na época ideal.</p>
-          </div>
-        </div>
-
         <div class="pcard reveal">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1567663803965-967e472241e3?w=500&q=75" alt="Uvas" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Uvas</h3>
-            <p>Variedades de mesa nacionais e importadas, com e sem grainha.</p>
-          </div>
+          <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=500&q=75" alt="Maçãs" loading="lazy" />
+          <div class="pcard__overlay"><h3>Maçãs</h3></div>
         </div>
-
-        <div class="pcard reveal reveal--delay-1">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1559852925-a9b83b8387d0?w=500&q=75" alt="Frutos secos e sementes" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Frutos Secos &amp; Sementes</h3>
-            <p>Amêndoas, nozes, passas, tâmaras, pinhões e muito mais.</p>
-          </div>
-        </div>
-
-        <div class="pcard reveal reveal--delay-2">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1757627550652-30788bfce978?w=500&q=75" alt="Legumes e hortícolas" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Legumes &amp; Hortícolas</h3>
-            <p>Tomate, couve, espinafre, pimento e toda a horticultura fresca.</p>
-          </div>
-        </div>
-
         <div class="pcard reveal">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1561635741-c416a5193b6e?w=500&q=75" alt="Batatas" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Batatas</h3>
-            <p>Branca, roxa, doce e muitas variedades frescas da época.</p>
-          </div>
+          <img src="images/peras.jpg" alt="Peras" loading="lazy" />
+          <div class="pcard__overlay"><h3>Peras</h3></div>
         </div>
-
-        <div class="pcard reveal reveal--delay-1">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1635450672547-bf600c193d3d?w=500&q=75" alt="Cebolas e alhos" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Cebolas &amp; Alhos</h3>
-            <p>Cebola branca, roxa, alho e chalotas dos melhores produtores.</p>
-          </div>
-        </div>
-
-        <div class="pcard reveal reveal--delay-2">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1634999429071-d35abc56734e?w=500&q=75" alt="Cogumelos" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Cogumelos</h3>
-            <p>Paris, portobello, shitake, pleurotus e variedades exóticas.</p>
-          </div>
-        </div>
-
         <div class="pcard reveal">
-          <div class="pcard__img-wrap">
-            <img src="https://images.unsplash.com/photo-1564894809611-1742fc40ed80?w=500&q=75" alt="Leguminosas secas" loading="lazy" />
-            <div class="pcard__overlay"><a href="#contacto" class="pcard__cta">Solicitar</a></div>
-          </div>
-          <div class="pcard__info">
-            <h3>Leguminosas Secas</h3>
-            <p>Feijão, grão-de-bico, lentilhas, quinoa e muito mais.</p>
-          </div>
+          <img src="images/morangos.webp" alt="Frutos vermelhos" loading="lazy" />
+          <div class="pcard__overlay"><h3>Frutos Vermelhos</h3></div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== NÚMEROS ===== -->
-  <section class="numeros section" id="numeros">
-    <div class="container">
-      <div class="numeros__grid">
-        <div class="stat reveal">
-          <span class="stat__value" data-target="15">0</span>
-          <span class="stat__suffix">+</span>
-          <p class="stat__label">Anos de experiência</p>
+        <div class="pcard reveal">
+          <img src="https://images.unsplash.com/photo-1639588473831-dd9d014646ae?w=500&q=75" alt="Frutos de caroço" loading="lazy" />
+          <div class="pcard__overlay"><h3>Frutos de Caroço</h3></div>
         </div>
-        
-        <div class="stat reveal reveal--delay-1">
-          <span class="stat__value" data-target="20">0</span>
-          <span class="stat__suffix">+</span>
-          <p class="stat__label">Países de origem</p>
+        <div class="pcard reveal">
+          <img src="images/uvas.jpg" alt="Uvas" loading="lazy" />
+          <div class="pcard__overlay"><h3>Uvas</h3></div>
         </div>
-        <div class="stat reveal reveal--delay-2">
-          <span class="stat__value" data-target="300">0</span>
-          <span class="stat__suffix">t+</span>
-          <p class="stat__label">Distribuídas por ano</p>
+        <div class="pcard reveal">
+          <img src="images/frutos-secos.png" alt="Frutos secos e sementes" loading="lazy" />
+          <div class="pcard__overlay"><h3>Frutos Secos &amp; Sementes</h3></div>
         </div>
-        <div class="stat reveal reveal--delay-3">
-          <span class="stat__value" data-target="500">0</span>
-          <span class="stat__suffix">+</span>
-          <p class="stat__label">Clientes satisfeitos</p>
+        <div class="pcard reveal">
+          <img src="images/legumes.jpg" alt="Legumes e hortícolas" loading="lazy" />
+          <div class="pcard__overlay"><h3>Legumes &amp; Hortícolas</h3></div>
+        </div>
+        <div class="pcard reveal">
+          <img src="images/batatas.jpeg" alt="Batatas" loading="lazy" />
+          <div class="pcard__overlay"><h3>Batatas</h3></div>
+        </div>
+        <div class="pcard reveal">
+          <img src="images/cebolas.jpg" alt="Cebolas e alhos" loading="lazy" />
+          <div class="pcard__overlay"><h3>Cebolas &amp; Alhos</h3></div>
+        </div>
+        <div class="pcard reveal">
+          <img src="images/cogumelos.jpg" alt="Cogumelos" loading="lazy" />
+          <div class="pcard__overlay"><h3>Cogumelos</h3></div>
+        </div>
+        <div class="pcard reveal">
+          <img src="https://images.unsplash.com/photo-1564894809611-1742fc40ed80?w=500&q=75" alt="Leguminosas secas" loading="lazy" />
+          <div class="pcard__overlay"><h3>Leguminosas Secas</h3></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== QUALIDADE / SUSTENTABILIDADE ===== -->
-  <section class="qualidade section section--light" id="qualidade">
+  <!-- ===== QUALIDADE ===== -->
+  <section class="qualidade section" id="qualidade">
     <div class="container">
-      <div class="section__header reveal">
-        <span class="section__tag">Qualidade &amp; Sustentabilidade</span>
-        <h2 class="section__title">O nosso compromisso<br />vai além da fruta</h2>
-      </div>
+      <span class="tag tag--green">Qualidade &amp; Sustentabilidade</span>
+      <h2 class="heading">O nosso compromisso<br />vai além da fruta</h2>
 
       <div class="qualidade__grid">
-        <div class="qcard reveal">
-          <div class="qcard__icon">🌿</div>
-          <h4 class="qcard__title">Práticas Sustentáveis</h4>
-          <p class="qcard__text">Trabalhamos com produtores que respeitam o ambiente e aplicam agricultura integrada ou biológica.</p>
+        <div class="qspot qspot--a reveal">
+          <div class="qspot__icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M5 5l14 14M19 5L5 19M2 12h20"/></svg></div>
+          <h3>Cadeia de Frio</h3>
+          <p>Logística refrigerada do produtor ao cliente, preservando a frescura e os nutrientes em cada entrega.</p>
         </div>
-        <div class="qcard reveal reveal--delay-1">
-          <div class="qcard__icon">🔬</div>
-          <h4 class="qcard__title">Controlo Analítico</h4>
-          <p class="qcard__text">Análises regulares a resíduos e contaminantes garantem conformidade com as normas europeias mais exigentes.</p>
-        </div>
-        <div class="qcard reveal reveal--delay-2">
-          <div class="qcard__icon">❄️</div>
-          <h4 class="qcard__title">Cadeia de Frio</h4>
-          <p class="qcard__text">Logística refrigerada do produtor ao cliente, preservando a frescura e os nutrientes em cada entrega.</p>
-        </div>
-        <div class="qcard reveal reveal--delay-3">
-          <div class="qcard__icon">📋</div>
-          <h4 class="qcard__title">Certificações</h4>
-          <p class="qcard__text">Trabalhamos com fornecedores certificados GlobalG.A.P., BRC, IFS e outros padrões reconhecidos internacionalmente.</p>
+        <div class="qspot qspot--b reveal reveal--delay-1">
+          <div class="qspot__icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4V2h6v2"/><path d="M9 13l2 2 4-4"/></svg></div>
+          <h3>Certificações</h3>
+          <p>Trabalhamos com fornecedores certificados GlobalG.A.P., BRC, IFS e outros padrões reconhecidos internacionalmente.</p>
         </div>
       </div>
-
-      <!--
-      <div class="certs reveal">
-        <p class="certs__label">Certificações dos nossos parceiros</p>
-        <div class="certs__logos">
-          <div class="cert-badge">GlobalG.A.P.</div>
-          <div class="cert-badge">BRC Food</div>
-          <div class="cert-badge">IFS Food</div>
-          <div class="cert-badge">ISO 22000</div>
-          <div class="cert-badge">Rainforest Alliance</div>
-        </div>
-      </div>
-      -->
     </div>
   </section>
 
   <!-- ===== CONTACTO ===== -->
   <section class="contacto section" id="contacto">
     <div class="container">
-      <div class="section__header reveal">
-        <span class="section__tag">Contacto</span>
-        <h2 class="section__title">Vamos trabalhar juntos?</h2>
-        <!--<p class="section__subtitle">Preencha o formulário e a nossa equipa responde em menos de 24 horas.</p> -->
-      </div>
+      <span class="tag tag--green">Contacto</span>
+      <h2 class="heading">Vamos trabalhar juntos?</h2>
 
-      <div class="contacto__grid">
-
-        
-
-        <div class="contacto__info reveal reveal--right">
+      <div class="contacto__card reveal">
+        <div class="contacto__info">
           <div class="info-item">
-            <span class="info-item__icon">📍</span>
+            <span class="info-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
             <div>
               <h4>Morada</h4>
-              <p>
-                Edf. Toma Café<br />
-                Parque Empresarial da Cancela<br />
-                MI 3.3 — Caniço<br />
-                9125-042 Santa Cruz, Madeira
-              </p>
+              <p>Edf. Toma Café<br />Parque Empresarial da Cancela<br />MI 3.3 — Caniço<br />9125-042 Santa Cruz, Madeira</p>
             </div>
           </div>
           <div class="info-item">
-            <span class="info-item__icon">📞</span>
+            <span class="info-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 1h2a2 2 0 0 1 2 1.72c.13.95.32 1.88.57 2.78a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.25 1.83.44 2.78.57A2 2 0 0 1 22 16.92z"/></svg></span>
             <div>
               <h4>Telefone</h4>
               <p><a href="tel:+351291091576">(+351) 201 091 576</a></p>
             </div>
           </div>
           <div class="info-item">
-            <span class="info-item__icon">✉️</span>
+            <span class="info-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></span>
             <div>
               <h4>E-mail</h4>
               <p><a href="mailto:info@gmfruits.com">info@gmfruits.com</a></p>
             </div>
           </div>
           <div class="info-item">
-            <span class="info-item__icon">🕐</span>
+            <span class="info-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
             <div>
               <h4>Horário</h4>
               <p>Seg–Sex: 07:00 – 18:00<br />Sáb: 07:00 – 13:00</p>
             </div>
           </div>
-
-          
         </div>
-        <div class="mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.5!2d-16.8295!3d32.6648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6060a0!2sCani%C3%A7o%2C+Santa+Cruz%2C+Madeira!5e0!3m2!1spt!2spt!4v1700000000000"
-              width="100%" height="230"
-              style="border:0; border-radius:12px;"
-              allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Localização GM Fruits"
-            ></iframe>
-          </div>
+        <div class="contacto__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.5!2d-16.8295!3d32.6648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6060a0!2sCani%C3%A7o%2C+Santa+Cruz%2C+Madeira!5e0!3m2!1spt!2spt!4v1700000000000"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização GM Fruits"
+          ></iframe>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer__inner">
+    <div class="container footer__top">
+      <a href="#inicio" class="footer__logo-bg">
+        <img src="images/logo.png" alt="GM Fruits" class="footer__logo-img" />
+      </a>
 
-      <div class="footer__brand">
-        <a href="#inicio" class="footer__logo-link">
-          <div class="footer__logo-bg">
-            <img src="images/logo.png" alt="GM Fruits" class="footer__logo-img" />
-          </div>
-        </a>
-        <p class="footer__desc">
-          Da origem à sua mesa — fruta fresca de qualidade
-          superior, entregue com confiança na Madeira.
-        </p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook" class="social-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" class="social-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" class="social-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="footer__links">
-        <h5>Empresa</h5>
-        <ul>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#qualidade">Qualidade</a></li>
-          <li><a href="#numeros">Em números</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__links">
-        <h5>Produtos</h5>
-        <ul>
-          <li><a href="#produtos">Tropicais &amp; Exóticas</a></li>
-          <li><a href="#produtos">Citrinos</a></li>
-          <li><a href="#produtos">Frutos Vermelhos</a></li>
-          <li><a href="#produtos">Frutos de Caroço</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__links">
-        <h5>Legal</h5>
-        <ul>
-          <li><a href="#">Política de Privacidade</a></li>
-          <li><a href="#">Termos e Condições</a></li>
-          <li><a href="#">Política de Cookies</a></li>
-        </ul>
-      </div>
-
+      <nav class="footer__nav">
+        <a href="#sobre">Sobre nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#qualidade">Qualidade</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
 
     <div class="footer__bottom">
-      <div class="container">
-        <p>© <span id="year"></span> GM Fruits. Todos os direitos reservados.</p>
-      </div>
+      <p>© <span id="year"></span> GM Fruits. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- Botão voltar ao topo -->
   <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
 
   <script src="js/script.js"></script>

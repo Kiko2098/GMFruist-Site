@@ -3,39 +3,32 @@
 (function () {
   'use strict';
 
-  /* ── DOM refs ── */
-  const header     = document.getElementById('header');
-  const hamburger  = document.getElementById('hamburger');
-  const nav        = document.getElementById('nav');
-  const backToTop  = document.getElementById('backToTop');
-  const form       = document.getElementById('contactForm');
-  const yearEl     = document.getElementById('year');
+  const header    = document.getElementById('header');
+  const hamburger = document.getElementById('hamburger');
+  const nav       = document.getElementById('nav');
+  const backToTop = document.getElementById('backToTop');
+  const yearEl    = document.getElementById('year');
 
-  /* ── Copyright year ── */
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /* ── Header scroll state ── */
   function onScroll() {
-    const scrolled = window.scrollY > 60;
-    header.classList.toggle('scrolled', scrolled);
+    header.classList.toggle('scrolled', window.scrollY > 40);
     backToTop.classList.toggle('visible', window.scrollY > 400);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
   /* ── Active nav link on scroll ── */
-  const sections  = document.querySelectorAll('section[id]');
-  const navLinks  = document.querySelectorAll('.nav__link');
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav__link');
 
   const sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navLinks.forEach((link) => {
-            link.classList.toggle(
-              'active',
-              link.getAttribute('href') === '#' + entry.target.id
-            );
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
           });
         }
       });
@@ -67,15 +60,15 @@
     if (e.key === 'Escape') closeMenu();
   });
 
-  /* ── Smooth scroll (polyfill for href="#section") ── */
+  /* ── Smooth scroll ── */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
       const target = document.querySelector(anchor.getAttribute('href'));
       if (!target) return;
       e.preventDefault();
-      const offset = header.offsetHeight + 8;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      const top = target.getBoundingClientRect().top + window.scrollY - 20;
       window.scrollTo({ top, behavior: 'smooth' });
+      closeMenu();
     });
   });
 
@@ -84,7 +77,7 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  /* ── Reveal on scroll (Intersection Observer) ── */
+  /* ── Reveal on scroll ── */
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -130,64 +123,5 @@
     { threshold: 0.3 }
   );
   document.querySelectorAll('[data-target]').forEach((el) => counterObserver.observe(el));
-
-  /* ── Form validation & submit ── */
-  if (form) {
-    const fields = {
-      nome:     { el: document.getElementById('nome'),     err: document.getElementById('nome-error') },
-      email:    { el: document.getElementById('email'),    err: document.getElementById('email-error') },
-      mensagem: { el: document.getElementById('mensagem'), err: document.getElementById('mensagem-error') },
-    };
-    const successMsg = document.getElementById('formSuccess');
-
-    function validateEmail(v) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
-    }
-
-    function clearError(field) {
-      field.el.classList.remove('error');
-      field.err.textContent = '';
-    }
-
-    Object.values(fields).forEach((f) => {
-      f.el.addEventListener('input', () => clearError(f));
-    });
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      let valid = true;
-
-      if (!fields.nome.el.value.trim()) {
-        fields.nome.el.classList.add('error');
-        fields.nome.err.textContent = 'Por favor, insira o seu nome.';
-        valid = false;
-      }
-      if (!validateEmail(fields.email.el.value)) {
-        fields.email.el.classList.add('error');
-        fields.email.err.textContent = 'Insira um endereço de email válido.';
-        valid = false;
-      }
-      if (!fields.mensagem.el.value.trim()) {
-        fields.mensagem.el.classList.add('error');
-        fields.mensagem.err.textContent = 'A mensagem não pode estar vazia.';
-        valid = false;
-      }
-
-      if (!valid) return;
-
-      /* Success feedback (replace with real API call when backend ready) */
-      const submitBtn = form.querySelector('button[type="submit"]');
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'A enviar…';
-
-      setTimeout(() => {
-        form.reset();
-        successMsg.classList.add('visible');
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviar Mensagem';
-        setTimeout(() => successMsg.classList.remove('visible'), 6000);
-      }, 1000);
-    });
-  }
 
 })();
